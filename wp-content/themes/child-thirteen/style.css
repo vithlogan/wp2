@@ -6,15 +6,15 @@ Version: 1.0
 Template:     twentythirteen
 */
 
-@import url("../twentythirteen/style.css");
+@import url("../twentyfifteen/style.css");
 @import url('https://fonts.googleapis.com/css?family=Anton');
-/*font-family: 'Anton', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/*font-family: 'Anton', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
 
-body:before {
-	background: aliceblue;
-}
 
-body {
+.site {
 	background: black;
 }
 
@@ -26,4 +26,40 @@ body {
 	line-height: 1.3636;
 	margin-bottom: 0;
 	color: white
+}
+
+
+.site-header .home-link {
+	color: #141412;
+	font-family: 'Open Sans', sans-serif;
+	display: block;
+	margin: 0 auto;
+	max-width: 1080px;
+	min-height: 230px;
+	padding: 0 20px;
+	text-decoration: none;
+	width: 100%;
+}
+
+.site-header .site-title:hover {
+	text-decoration: underline;
+}
+
+.nav-menu li a {
+	color: #white;
+	font-family: 'Open Sans', sans-serif;
+	background-color: grey;
+	display: block;
+	font-size: 15px;
+	line-height: 1;
+	padding: 15px 20px;
+	text-decoration: none;
+}
+
+.nav-menu li:hover > a,
+.nav-menu li a:hover,
+.nav-menu li:focus > a,
+.nav-menu li a:focus {
+	background-color: #220e10;
+	color: #fff;
 }
