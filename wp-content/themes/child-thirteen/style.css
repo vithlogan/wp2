@@ -1,0 +1,29 @@
+/*
+Theme Name: Twenty Thirteen Child
+Description: Child theme for devtools2 Class
+Author: Vith
+Version: 1.0
+Template:     twentythirteen
+*/
+
+@import url("../twentythirteen/style.css");
+@import url('https://fonts.googleapis.com/css?family=Anton');
+/*font-family: 'Anton', sans-serif;*/
+
+body:before {
+	background: aliceblue;
+}
+
+body {
+	background: black;
+}
+
+.site-title {
+	font-family: 'Anton', sans-serif;
+	font-size: 50px;
+	font-size: 2.2rem;
+	font-weight: 700;
+	line-height: 1.3636;
+	margin-bottom: 0;
+	color: white
+}
