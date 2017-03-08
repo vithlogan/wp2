@@ -13,53 +13,51 @@ Template:     twentythirteen
 font-family: 'Open Sans', sans-serif;
 */
 
-
-.site {
-	background: black;
+/*site styling*/
+.site { 
+	max-width: 100%;
+	 /*give site the full width, rather than preset*/
 }
 
-.site-title {
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1.entry-title {
+	font-size: 40px;
+}
+.site-title{
 	font-family: 'Anton', sans-serif;
 	font-size: 50px;
 	font-size: 2.2rem;
 	font-weight: 700;
 	line-height: 1.3636;
 	margin-bottom: 0;
-	color: white
+	color: grey;
 }
 
-
-.site-header .home-link {
-	color: #141412;
+/* Nav Styling*/
+.nav-menu li a:hover { 
 	font-family: 'Open Sans', sans-serif;
-	display: block;
-	margin: 0 auto;
-	max-width: 1080px;
-	min-height: 230px;
-	padding: 0 20px;
-	text-decoration: none;
-	width: 100%;
+	background-color: #black;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.6s;
+        -o-transition: 0.6s;
+        transition: 0.6s;
 }
-
-.site-header .site-title:hover {
-	text-decoration: underline;
-}
-
-.nav-menu li a {
-	color: #white;
-	font-family: 'Open Sans', sans-serif;
-	background-color: grey;
-	display: block;
-	font-size: 15px;
-	line-height: 1;
-	padding: 15px 20px;
-	text-decoration: none;
-}
-
-.nav-menu li:hover > a,
-.nav-menu li a:hover,
-.nav-menu li:focus > a,
-.nav-menu li a:focus {
-	background-color: #220e10;
+.nav-menu .current_page_item > a,
+.nav-menu .current_page_ancestor > a,
+.nav-menu .current-menu-item > a,
+.nav-menu .current-menu-ancestor > a {
 	color: #fff;
+	font-style: normal;
+	background-color:#111;
+
+
 }
+#masthead.site-header {
+	background-color:#F7F5E7;  
+}
+ 
+/* Add some more style to default menu style */
+
