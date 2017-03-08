@@ -10,6 +10,15 @@ function my_theme_enqueue_styles() {
         array( $parent_style ),
         wp_get_theme()->get('Version')
     );
-}
 
+} // remove widget area
+add_filter( 'sidebars_widgets', 'disable_all_widgets' );
+
+function disable_all_widgets( $sidebars_widgets ) {
+
+	if ( is_home() )
+		$sidebars_widgets = array( false );
+
+	return $sidebars_widgets;
+}
 ?>
