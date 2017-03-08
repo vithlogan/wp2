@@ -10,54 +10,92 @@ Template:     twentythirteen
 @import url('https://fonts.googleapis.com/css?family=Anton');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 /*font-family: 'Anton', sans-serif;
-font-family: 'Open Sans', sans-serif;
-*/
+/*font-family: 'Open Sans', sans-serif;*/
 
-/*site styling*/
-.site { 
-	max-width: 100%;
-	 /*give site the full width, rather than preset*/
-}
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Open Sans', sans-serif;
-}
+/*header image*/
+#masthead.site-header {
+			background: url("skyline.png");
+		}
+	
 
-h1.entry-title {
-	font-size: 40px;
-}
-.site-title{
+/*title*/
+.site-title {	
 	font-family: 'Anton', sans-serif;
-	font-size: 50px;
-	font-size: 2.2rem;
-	font-weight: 700;
-	line-height: 1.3636;
-	margin-bottom: 0;
-	color: grey;
+	color:white;
+	size:2em;
 }
 
-/* Nav Styling*/
-.nav-menu li a:hover { 
+/*Description under title */
+.site-description {
+	color: #365191; 
 	font-family: 'Open Sans', sans-serif;
-	background-color: #black;
-        -webkit-transition: 0.4s;
-        -moz-transition: 0.6s;
-        -o-transition: 0.6s;
-        transition: 0.6s;
 }
+/*Site Color*/
+.site {
+	background-color: #153138; /*background colour*/
+	color: #38151F; /*changes text colour*/
+}
+.site-footer {
+	background: #153138; /* matching the site background colour*/
+	color: #38151F;
+} 
+body:before {
+	background: #153138	; /*makes side bar the same colour as background*/
+}
+.comments-area {
+	background: #153138;
+}
+/*nav background coluor and text*/
+.navbar {
+	background: #292d32; 
+	color:white;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*nav text colour*/	
+.nav-menu li a {
+	color: white;
+	
+}
+
+.nav-menu li:hover > a,
+.nav-menu li a:hover,
+.nav-menu li:focus > a,
+.nav-menu li a:focus {
+	background-color: #23515C;
+	color: #fff;
+}
+
+/*nav colour on a clicked link*/
 .nav-menu .current_page_item > a,
 .nav-menu .current_page_ancestor > a,
 .nav-menu .current-menu-item > a,
 .nav-menu .current-menu-ancestor > a {
-	color: #fff;
-	font-style: normal;
-	background-color:#111;
+	color: #4566B5;
+	font-style: italic;
+}
+/*Content*/
+.entry-title{
+	color:#2F235C;
+}
 
+.entry-content{
+	color:#2F235C;
+}
+/*changes colour of content links*/
+
+.entry-meta a {
+	color: #344D89;
+}
+
+.entry-meta a:hover {
+	color: #344D89;
+}
+
+.site-info{
+	color:white
 
 }
-#masthead.site-header {
-	background-color:#F7F5E7;  
-}
- 
-/* Add some more style to default menu style */
+
 

@@ -15,7 +15,7 @@
 			<?php get_sidebar( 'main' ); ?>
 
 			<div class="site-info">
-			<!-- Update footer. Removed Wordpress and Twenty Thirteen Theme info. Now shows Copyright, they year and blog name, All rights reserved.  -->
+			<!-- Updated footer. Removed original Wordpress and Twenty Thirteen Theme branding. Added Copyright, the year, blog name and All rights reserved.  -->
 				<p>&copy; Copyright 
 				<?php echo date(Y); ?>
 				<?php bloginfo('name'); ?> All rights reserved.</p>
